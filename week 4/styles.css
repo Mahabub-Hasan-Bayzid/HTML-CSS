@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(19, 148, 105);
+    padding: 50px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 2;
+}
+label{
+    display: inline-block;
+    width: 200px;
+    color:goldenrod;
+    font-weight: 500;
+    
+}
+
+input{
+    width: 30%;
+    font-family: inherit;
+    font-size: inherit;
+    padding: 10px 5px;
+    border-radius: 5px;
+    border-color:goldenrod ;
+    margin: 10px;
+}
+.form{
+    justify-content: center;
+}

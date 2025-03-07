@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f0f5d3;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: #ceef61;
+  text-align: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  margin: 0 15px;
+  font-weight: 600;
+
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  letter-spacing: 2px;
+}
+
+.section {
+  padding: 100px 0;
+  text-align: center;
+}
+
+.about {
+  background: #f0f5d3;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 50px;
+  
+}
+
+.about img {
+  width: 400px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.projects {
+  background: #ddf68a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 50px;
+  height: 400px;
+}
+
+.project-card {
+  width: 200px;
+  height: 200px;
+  background: #f0f5e1;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.skills {
+  background: #f0f5d3;
+  color: rgb(0, 0, 0);
+  padding: 50px;
+  line-height: 2;
+}
+#backBtn{
+  
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  display: none;
+}
+footer {
+  background: #ceef61;
+  color: white;
+  text-align: center;
+  padding: 30px;
+  position: relative;
+}
+
+footer a {
+  color: white;
+  margin: 10px;
+  text-decoration: none;
+}
+
+
+#backBtn:hover{
+  background-color: #f3eaf1;
+  transition: 0.5s;
+}
+
+
+.button{
+  background-color: #ef61d3;
+  padding: 10px;
+  border: none;
+  color: black;
+  border-radius: 3px;
+}
+
+.overlay{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.544);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal{
+  display: block;
+  position: relative;
+  background-color: aliceblue;
+  height: 60vw;
+  width: 60vh;
+  padding-top: 30px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.modal button{
+  position: absolute;
+  top: 30px;
+  right: 40px;
+}
+
+.hidden{
+  display: none;
+}
