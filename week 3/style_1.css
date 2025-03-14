@@ -12,7 +12,7 @@ body{
 	background-color: #66003b;
 }
 .header {
-    background-image: url("/week 3/uploads/Untitled design.png"); 
+    background-image: url("./uploads/Untitled\ design.png"); 
     background-size:100%; 
     background-position: center; 
     background-repeat: no-repeat;

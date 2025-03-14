@@ -1,9 +1,9 @@
-let backBtn= document.getElementById('backBtn');
+const backBtn= document.getElementById('backBtn');
 const overlay = document.querySelector('.overlay');
-const modalButton= document.querySelector('#seeBtn')
-const closeButton= document.querySelector('.modal button')
+const modalButton= document.querySelector('#seeBtn');
+const closeButton= document.querySelector('.modal button');
 
-
+const darkMode = document.querySelector('#darkmode-toggle-input');
 
 
 const displayElement= ()=>{
@@ -35,7 +35,12 @@ const backButton= ()=>{
     document.documentElement.scrollTop= 0;
     
 }
-
+const nightMode= ()=>{
+    console.log('changed');
+    
+}
+    
+darkMode.addEventListener('click',nightMode);
 backBtn.addEventListener('click',backButton);
 modalButton.addEventListener('click', displayElement);
 closeButton.addEventListener('click', closeElement);
