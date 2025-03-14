@@ -3,9 +3,11 @@
   padding: 0;
   box-sizing: border-box;
 }
-html{
+
+html {
   scroll-behavior: smooth;
 }
+
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
@@ -26,7 +28,6 @@ nav a {
   color: black;
   margin: 0 15px;
   font-weight: 600;
-
 }
 
 h1 {
@@ -43,26 +44,27 @@ h1 {
 .about {
   background: #f0f5d3;
   display: flex;
-  justify-content: center;
-  gap: 40px;
+  flex-direction: column;
+  align-items: center;
   padding: 50px;
-  
 }
 
 .about img {
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
   height: auto;
   border-radius: 10px;
+  margin-top: 20px;
 }
 
 .projects {
   background: #ddf68a;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 20px;
   padding: 50px;
-  height: 400px;
 }
 
 .project-card {
@@ -70,7 +72,7 @@ h1 {
   height: 200px;
   background: #f0f5e1;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  display: grid;
+  display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 10px;
@@ -82,13 +84,14 @@ h1 {
   padding: 50px;
   line-height: 2;
 }
-#backBtn{
-  
+
+#backBtn {
   position: fixed;
   bottom: 10px;
   right: 10px;
   display: none;
 }
+
 footer {
   background: #ceef61;
   color: white;
@@ -103,14 +106,12 @@ footer a {
   text-decoration: none;
 }
 
-
-#backBtn:hover{
+#backBtn:hover {
   background-color: #f3eaf1;
   transition: 0.5s;
 }
 
-
-.button{
+.button {
   background-color: #ef61d3;
   padding: 10px;
   border: none;
@@ -118,7 +119,7 @@ footer a {
   border-radius: 3px;
 }
 
-.overlay{
+.overlay {
   position: fixed;
   top: 0;
   bottom: 0;
@@ -130,22 +131,33 @@ footer a {
   align-items: center;
 }
 
-.modal{
+.modal {
   display: block;
   position: relative;
   background-color: aliceblue;
-  height: 60vw;
-  width: 60vh;
-  padding-top: 30px;
-  padding-left: 40px;
-  padding-right: 40px;
-}
-.modal button{
-  position: absolute;
-  top: 30px;
-  right: 40px;
+  max-width: 90%;
+  max-height: 90%;
+  padding: 30px;
 }
 
-.hidden{
+.modal button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.hidden {
   display: none;
+}
+
+@media (min-width: 768px) {
+  .about {
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  .about img {
+    margin-top: 0;
+  }
 }
