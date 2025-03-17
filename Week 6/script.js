@@ -36,7 +36,7 @@ const backButton= ()=>{
     
 }
 const nightMode= ()=>{
-    console.log('changed');
+      
     
 }
     
