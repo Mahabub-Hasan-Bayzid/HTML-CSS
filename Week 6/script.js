@@ -1,46 +1,30 @@
-const backBtn= document.getElementById('backBtn');
+// Selecting elements
+const backBtn = document.getElementById('backBtn');
 const overlay = document.querySelector('.overlay');
-const modalButton= document.querySelector('#seeBtn');
-const closeButton= document.querySelector('.modal button');
+const modalButton = document.querySelector('#seeBtn');
+const closeButton = document.querySelector('.close-modal');
 
-const darkMode = document.querySelector('#darkmode-toggle-input');
-
-
-const displayElement= ()=>{
+// Function to toggle modal visibility
+const toggleModal = () => {
     overlay.classList.toggle('hidden');
-}
-
-const closeElement=()=>{
-    overlay.classList.toggle('hidden')
-}
-
-
-
-
-
-
-window.onscroll= function () {
-    scrollFunction();
 };
-const scrollFunction= ()=>{
-    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200){
-        backBtn.style.display= "block"
+
+// Function to smoothly scroll back to top
+const backToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+};
+
+// Function to handle scroll event
+const scrollFunction = () => {
+    if (window.scrollY > 200) {
+        backBtn.style.display = "block";
+    } else {
+        backBtn.style.display = "none";
     }
-    else{
-        backBtn.style.display= "none"
-    }
-}
-const backButton= ()=>{
-    document.body.scrollTop = 0
-    document.documentElement.scrollTop= 0;
-    
-}
-const nightMode= ()=>{
-      
-    
-}
-    
-darkMode.addEventListener('click',nightMode);
-backBtn.addEventListener('click',backButton);
-modalButton.addEventListener('click', displayElement);
-closeButton.addEventListener('click', closeElement);
+};
+
+// Event listeners
+modalButton.addEventListener('click', toggleModal);
+closeButton.addEventListener('click', toggleModal);
+backBtn.addEventListener('click', backToTop);
+window.addEventListener('scroll', scrollFunction);

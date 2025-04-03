@@ -1,0 +1,113 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Section Titles */
+.section-subtitle {
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: #444;
+}
+
+.section-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Work Container */
+.work-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.work-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.work-item img {
+    width: 100%;
+    display: block;
+    transition: 0.3s ease-in-out;
+}
+
+/* Hover Effect for ALL Cards */
+.work-item .hover-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.work-item:hover .hover-overlay {
+    opacity: 1;
+}
+
+.project-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.project-description {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.project-icons {
+    font-size: 12px;
+    margin: 10px 0;
+}
+
+.learn-more {
+    display: inline-block;
+    padding: 8px 15px;
+    color: white;
+    border: 1px solid white;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 12px;
+    transition: 0.3s;
+}
+
+.learn-more:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Show More Button */
+.show-more {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    background: white;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.show-more:hover {
+    background: #ddd;
+}

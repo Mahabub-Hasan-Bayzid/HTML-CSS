@@ -1,85 +1,242 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
-  <header>
-
-    <nav>
-      <h1>Mahabub Hasan Bayzid</h1>
-      <div>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="#contact">Contact me</a>
-      </div>
-      <div class="div">
-        <input type="checkbox" id="darkmode-toggle-input" />
-        <label for="darkmode-toggle-input" class="darkmode-toggle">
-          <svg version="1.1" class="sun" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 496 496" style="enable-background:new 0 0 496 496;" xml:space="preserve">
-            <path d="M248,88c-88.224,0-160,71.776-160,160s71.776,160,160,160s160-71.776,160-160S336.224,88,248,88z M248,392 c-79.4,0-144-64.6-144-144s64.6-144,144-144s144,64.6,144,144S327.4,392,248,392z" />
-          </svg>
-          <svg version="1.1" class="moon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 49.739 49.739" style="enable-background:new 0 0 49.739 49.739;" xml:space="preserve">
-            <path d="M25.068,48.889c-9.173,0-18.017-5.06-22.396-13.804C-3.373,23.008,1.164,8.467,13.003,1.979l2.061-1.129l-0.615,2.268 c-1.479,5.459-0.899,11.25,1.633,16.306c2.75,5.493,7.476,9.587,13.305,11.526c5.831,1.939,12.065,1.492,17.559-1.258v0 c0.25-0.125,0.492-0.258,0.734-0.391l2.061-1.13l-0.585,2.252c-1.863,6.873-6.577,12.639-12.933,15.822 C32.639,48.039,28.825,48.888,25.068,48.889z M12.002,4.936c-9.413,6.428-12.756,18.837-7.54,29.253 c5.678,11.34,19.522,15.945,30.864,10.268c5.154-2.582,9.136-7.012,11.181-12.357c-5.632,2.427-11.882,2.702-17.752,0.748 c-6.337-2.108-11.473-6.557-14.463-12.528C11.899,15.541,11.11,10.16,12.002,4.936z" />
-          </svg>
-        </label>
-      </div>
-    </nav>
-  </header>
-    
-      <div class="about" id="about">
-        <div>
-          <h2>About</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quaerat, ad illum ipsa veniam quo, hic error expedita numquam vel neque aliquam esse amet enim possimus! Minus nisi, ullam adipisci optio corrupti nam voluptatem praesentium suscipit quibusdam, iure voluptates officia eligendi natus eos reiciendis voluptate explicabo voluptatibus. Dicta, delectus sint.</p>
-          <button class="button" id="seeBtn">See More</button>
-        </div>
-        <img src="https://www.comfortzone.com/-/media/Project/OneWeb/ComfortZone/Images/Blog/how-can-I-soothe-and-calm-my-cat.jpeg" alt="fox">
-      </div>
-      <section id="projects">
-        <div class="projects">
-            <h2>Projects</h2>
-              <div class="project-card">Project 1</div>
-              <div class="project-card">Project 2</div>
-              <div class="project-card">Project 3</div>
-              <div class="project-card">Project 4</div>
-          </div>
-      </section>
-      
-      <section id="skills">
-          <div class="skills">
-              <h2>Skills</h2>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur beatae reiciendis nemo placeat quaerat harum ut.
-                 voluptas hic ea ullam tempora doloribus distinctio adipisci illum nobis nesciunt pariatur, quod assumenda modi culpa sint veritatis!
-                 
-                 Exercitationem voluptate mollitia debitis aliquam vero iure ut nihil quos tempore error libero fuga odit laborum obcaecati molestiae, inventore reiciendis eius ad! Neque sequi dicta aperiam modi? Consequatur ut doloremque culpa quod repudiandae sed autem reprehenderit. Nam, doloremque porro officia excepturi assumenda non recusandae adipisci alias.</p>
+    <div class="container">
+      <aside>
+        <nav>
+            <img src="1.png" alt="Your Logo" class="logo">
+            <h1>MAHABUB HASAN.</h1>
+            <div class="nav-links">
+                <a href="#home"><i class="fas fa-home"></i> HOME</a>
+                <a href="#about"><i class="fas fa-user"></i> ABOUT</a>
+                <a href="#skills"><i class="fas fa-tools"></i> SKILLS</a>
+                <a href="#work"><i class="fas fa-briefcase"></i> WORK</a>
+                <a href="#service"><i class="fas fa-cogs"></i> SERVICE</a>
+                <a href="#blog"><i class="fas fa-rss"></i> BLOG</a>
+                <a href="#contact"><i class="fas fa-envelope"></i> CONTACT</a>
             </div>
-      </section>
+            <div class="dark-light-toggle">
+                <button class="dark-mode-btn"><i class="fas fa-moon"></i> Dark</button>
+                <button class="light-mode-btn"><i class="fas fa-sun"></i> Light</button>
+            </div>
+            <div class="social-links">
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon"><i class="fas fa-globe"></i></a>
+            </div>
+            <div class="copyright">
+                © 2025 MHB. All rights reserved.
+            </div>
+        </nav>
+    </aside>
+        <main>
+            <div class="about" id="about">
+                <div>
+                    <h2>Hello there!</h2>
+                    <h1>I am Mahabub Hasan Bayzid</h1>
+                    <h4>Full Stack Web Developer</h4>
+                    <button class="button" id="seeBtn">See More</button>
+                </div>
+
+            </div>
+            <section id="expertise">
+              <div class="expertise">
+                <h2>What I Do?</h2>
+                <p>HERE ARE SOME OF MY EXPERTISE</p>
+            
+                <div class="expertise-grid">
+                  <div class="expertise-item">
+
+                    <h3>HTML & CSS</h3>
+                    <div class="expertise-percentage">80%</div>
+                    <p>Skilled in building responsive and visually appealing web pages...</p>
+                  </div>
+            
+                  <div class="expertise-item">
+                    <div class="expertise-icon">
+                      <img src="javascript-icon.png" alt="JavaScript Icon">
+                    </div>
+                    <h3>JavaScript</h3>
+                    <div class="expertise-percentage">70%</div>
+                    <p>Proficient in JavaScript for creating dynamic and interactive web applications...</p>
+                  </div>
+            
+                  <div class="expertise-item">
+                    <div class="expertise-icon">
+                      <img src="react-icon.png" alt="React Icon">
+                    </div>
+                    <h3>REACT</h3>
+                    <div class="expertise-percentage">90%</div>
+                    <p>Skilled in building responsive and visually appealing web pages...</p>
+                  </div>
+            
+                  <div class="expertise-item">
+                    <div class="expertise-icon">
+                      <img src="php-icon.png" alt="PHP Icon">
+                    </div>
+                    <h3>PHP</h3>
+                    <div class="expertise-percentage">90%</div>
+                    <p>PHP Skilled in building responsive and visually appealing web pages...</p>
+                  </div>
+            
+                  <div class="expertise-item">
+                    <div class="expertise-icon">
+                      <img src="ui-ux-icon.png" alt="UI/UX Icon">
+                    </div>
+                    <h3>Ui / Ux</h3>
+                    <div class="expertise-percentage">95%</div>
+                    <p>Skilled in building responsive and visually appealing web pages...</p>
+                  </div>
+            
+                  <div class="expertise-item">
+                    <div class="expertise-icon">
+                      <img src="devops-icon.png" alt="Dev Ops Icon">
+                    </div>
+                    <h3>Dev Ops</h3>
+                    <div class="expertise-percentage">60%</div>
+                    <p>Skilled in building responsive and visually appealing web pages...</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="recent-work">
+              <div class="title">
+                <h2>MY WORK</h2>
+              <p>RECENT WORK</p>
+              </div>
       
-      <footer>
-        <p>Mahabub Hasan Bayzid</p>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact me</a>
-        <button class="button" id="backBtn">Back to TOP</button>
-      </footer>
+              <div class="work-container">
+                  <div class="work-item">
+                      <div class="work-image">
+                          <img src="https://img.freepik.com/free-photo/person-front-computer-working-html_23-2150040428.jpg?t=st=1742812844~exp=1742816444~hmac=ec4f55146894d433241102305d8288ed17f08cdba83048f12a422a1aa4fe2032&w=1800" alt="Project">
+                          <div class="hover-overlay">
+                              <h3 class="project-title">PROJECT 01</h3>
+                              <p class="project-description">SHORT DESCRIPTION</p>
+                              <div class="project-icons">
+                                  <span>👁️ 999</span>
+                                  <span>💬 99</span>
+                              </div>
+                              <a href="#" class="learn-more">Learn More →</a>
+                          </div>
+                      </div>
+                  </div>
       
-      <div class="overlay hidden">
+                  <div class="work-item">
+                      <div class="work-image">
+                          <img src="https://images.pexels.com/photos/5816297/pexels-photo-5816297.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Project">
+                          <div class="hover-overlay">
+                              <h3 class="project-title">PROJECT 02</h3>
+                              <p class="project-description">SHORT DESCRIPTION</p>
+                              <div class="project-icons">
+                                  <span>👁️ 750</span>
+                                  <span>💬 80</span>
+                              </div>
+                              <a href="#" class="learn-more">Learn More →</a>
+                          </div>
+                      </div>
+                  </div>
+      
+                  <div class="work-item">
+                      <div class="work-image">
+                          <img src="https://img.freepik.com/free-photo/programming-background-collage_23-2149901790.jpg?t=st=1742813576~exp=1742817176~hmac=47d183bf5f72f9392e6e38401382e5103aaeb46cba23ff16f8c1e541e350178c&w=2000" alt="Project">
+                          <div class="hover-overlay">
+                              <h3 class="project-title">PROJECT 03</h3>
+                              <p class="project-description">SHORT DESCRIPTION</p>
+                              <div class="project-icons">
+                                  <span>👁️ 500</span>
+                                  <span>💬 60</span>
+                              </div>
+                              <a href="#" class="learn-more">Learn More →</a>
+                          </div>
+                      </div>
+                  </div>
+      
+                  <div class="work-item">
+                      <div class="work-image">
+                          <img src="https://img.freepik.com/free-photo/3d-rendering-website-hosting-concept_23-2149484783.jpg?t=st=1742813604~exp=1742817204~hmac=e584d463da254c04ffedb58e4137870bdddca86424dcd85049539c5c8bf450e4&w=2000" alt="Project">
+                          <div class="hover-overlay">
+                              <h3 class="project-title">PROJECT 04</h3>
+                              <p class="project-description">SHORT DESCRIPTION</p>
+                              <div class="project-icons">
+                                  <span>👁️ 300</span>
+                                  <span>💬 40</span>
+                              </div>
+                              <a href="#" class="learn-more">Learn More →</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+      
+              <div class="showmore">
+                <button class="show-more">Show more</button>
+              </div>
+          </section>
+            <section class="blog-section">
+              <h2>READ</h2>
+              <p>RECENT BLOGS</p>
+              
+              <div class="blog-container">
+                  <div class="blog-card">
+                      <div class="blog-image">
+                          <img src="https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Blog Image">
+                      </div>
+                      <p class="blog-meta">07 - FEB - 2099 | Web Design | 💬 09</p>
+                      <h3 class="blog-title">BLOG TITLE</h3>
+                      <p class="blog-description">Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. BLOGS</p>
+                      <a href="#" class="read-more">READ MORE →</a>
+                  </div>
+      
+                  <div class="blog-card">
+                      <div class="blog-image">
+                          <img src="https://images.pexels.com/photos/5926382/pexels-photo-5926382.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Blog Image">
+                      </div>
+                      <p class="blog-meta">07 - FEB - 2099 | Web Design | 💬 09</p>
+                      <h3 class="blog-title">BLOG TITLE</h3>
+                      <p class="blog-description">Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. BLOGS</p>
+                      <a href="#" class="read-more">READ MORE →</a>
+                  </div>
+      
+                  <div class="blog-card">
+                      <div class="blog-image">
+                          <img src="https://images.pexels.com/photos/4974922/pexels-photo-4974922.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Blog Image">
+                      </div>
+                      <p class="blog-meta">07 - FEB - 2099 | Web Design | 💬 09</p>
+                      <h3 class="blog-title">BLOG TITLE</h3>
+                      <p class="blog-description">Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. BLOGS</p>
+                      <a href="#" class="read-more">READ MORE →</a>
+                  </div>
+              </div>
+          </section>
+          <section>
+            <div class="contact-box">
+                <h2 class="contact-title">GET IN TOUCH!</h2>
+                <p class="contact-description">
+                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum, sed unde. Eum odio et suscipit quod vero aut commodi nesciunt voluptates fuga, dolore dolorem delectus soluta ducimus modi minima a dolores, id corrupti ratione. Architecto maiores eligendi itaque reiciendis veniam!
+                </p>
+                <a href="#" class="contact-button">CONTACT ME</a>
+            </div>
+        </section>
+              <button class="button" id="backBtn">Back to TOP</button>
+        </main>
+    </div>
+    <div class="overlay hidden">
         <div class="modal">
             <h2>I am Modal</h2>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio dicta molestiae at voluptate veniam! Magnam error aut numquam dolor? Soluta sapiente iure eveniet porro quos ullam molestias vitae ipsum eum maiores repellendus aliquam maxime a recusandae molestiae itaque placeat et officia ipsa, quasi mollitia qui consequatur magni? Dignissimos, nihil id.
+              Passionate full stack developer skilled in crafting responsive, user-focused websites and applications. Experienced with HTML, CSS, JavaScript, and backend technologies. Driven by problem-solving and innovation.
             </p>
-            <button class="button">Close</button>
+            <button class="button close-modal">Close</button>
         </div>
-      </div>
-      
-      <script src="script.js"></script>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
